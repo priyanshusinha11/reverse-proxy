@@ -6,7 +6,7 @@ const app = express();
 const proxy = httpProxy.createProxyServer();
 const PORT = 8081;
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 app.post('/proxy', (req, res) => {
     const targetUrl = 'http://localhost:3000/api/data';

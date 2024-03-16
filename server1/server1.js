@@ -6,7 +6,7 @@ const PORT = 3000;
 
 app.use(bodyParser.json());
 
-app.post('/api/data', (req, res, next) => {
+app.post('/api/data/:name', (req, res, next) => {
     try {
         console.log('Received data:', req.body);
         res.setHeader('Connection', 'keep-alive');
